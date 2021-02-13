@@ -1,4 +1,4 @@
-def countCharacterType(str): 
+def countCharacter(str): 
     
     vowels = 0
     consonant = 0
@@ -28,4 +28,4 @@ def countCharacterType(str):
     print("Total Letters:", totalLetters)
   
 str = input("Enter you word or phrase: ")
-countCharacterType(str)
+countCharacter(str)
