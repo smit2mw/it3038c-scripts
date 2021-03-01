@@ -13,20 +13,29 @@ var server = http.createServer(function(req, res) {
 
     else if(req.url.match("/sysinfo")) {
         myHostName=os.hostname();
-        function format(seconds){
+        TotalMemBytes = os.totalmem();
+        FreeMemBytes = os.freemem();
+        function formatTime(seconds){  //https://stackoverflow.com/questions/28705009/how-do-i-get-the-server-uptime-in-node-js/28706630
             function pad(s){
               return (s < 10 ? '0' : '') + s;
             }
+            var days = Math.floor(seconds / (60*60*24));
             var hours = Math.floor(seconds / (60*60));
             var minutes = Math.floor(seconds % (60*60) / 60);
             var seconds = Math.floor(seconds % 60);
           
-            return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+            return pad(days) + ':' + pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
           }
           
           var uptime = process.uptime();
-          console.log(format(uptime));
-        html=`
+          console.log(formatTime(uptime));
+
+        function formatBytes(bytes){
+            myMem = (bytes / 1048576);
+            return myMem;
+        }
+        
+          html=`
         <!DOCTYPE html>
         <head>
             <title>Node JS Response</title>
@@ -34,10 +43,10 @@ var server = http.createServer(function(req, res) {
         <body>
             <p>Hostname: ${myHostName}</p>
             <p>IP: ${ip.address()}</p>
-            <p>Server Uptime: ${uptime.format(seconds)} </p>
-            <p>Total Memory: </p>
-            <p>Free Memory: </p>
-            <p>Number of CPUs: </p>
+            <p>Server Uptime: ${formatTime(uptime)} </p>
+            <p>Total Memory: ${formatBytes(TotalMemBytes)} MB</p>
+            <p>Free Memory: ${formatBytes(FreeMemBytes)} MB</p>
+            <p>Number of CPUs: ${((os.cpus().length) / 2 )} </p>  
         </body>
         </html>
         `
