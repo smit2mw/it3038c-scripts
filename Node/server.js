@@ -13,6 +13,24 @@ var server = http.createServer(function(req, res) {
 
     else if(req.url.match("/sysinfo")) {
         myHostName=os.hostname();
+        String.prototype.toHHMMSS = function () {
+            var sec_num = parseInt(this, 10); // don't forget the second param
+            var hours   = Math.floor(sec_num / 3600);
+            var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
+            var seconds = sec_num - (hours * 3600) - (minutes * 60);
+        
+            if (hours   < 10) {hours   = "0"+hours;}
+            if (minutes < 10) {minutes = "0"+minutes;}
+            if (seconds < 10) {seconds = "0"+seconds;}
+            var time    = hours+':'+minutes+':'+seconds;
+            return time;
+        }
+        
+        if(commandCheck("/uptime")){
+            var time = process.uptime();
+            var uptime = (time + "").toHHMMSS();
+            console.log(uptime);
+        }
         html=`
         <!DOCTYPE html>
         <head>
@@ -21,7 +39,7 @@ var server = http.createServer(function(req, res) {
         <body>
             <p>Hostname: ${myHostName}</p>
             <p>IP: ${ip.address()}</p>
-            <p>Server Uptime: </p>
+            <p>Server Uptime: ${uptime} </p>
             <p>Total Memory: </p>
             <p>Free Memory: </p>
             <p>Number of CPUs: </p>

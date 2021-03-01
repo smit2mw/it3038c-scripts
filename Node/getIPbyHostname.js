@@ -1,4 +1,4 @@
-/*var path = require("path"); 
+var path = require("path"); 
 var dns = require('dns'); 
 
 function hostnameLookup(h) {
@@ -17,4 +17,3 @@ if (process.argv.length <= 2) {
 var hostname = process.argv[2] 
 console.log(`Checking IP of: ${hostname}`) 
 hostnameLookup(hostname)
-*/
