@@ -10,6 +10,7 @@ Assuming you already have Python3 installed you must run these commands:
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade Pillow
 ```
-
+Once you have downloaded my script you can use the following command to run it:
+```
 ```javascript
 JavaScript code block to highlight whats up in my code
