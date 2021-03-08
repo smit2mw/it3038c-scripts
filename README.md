@@ -26,5 +26,5 @@ Then it will show your new image automatically with:
     im.show()
 ```
 ```javascript
-JavaScript code block to highlight whats up above btw
+    JavaScript code block to highlight whats up above btw
 ```
