@@ -21,7 +21,10 @@ The script I have written will use the following code to alter the image in an u
     im = im.resize((5000,4500))
     im = im.filter(ImageFilter.UnsharpMask(50,200,8))
 ```
-
+Then it will show your new image automatically with:
+```python
+im.show()
+```
 ```javascript
 JavaScript code block to highlight whats up above btw
 ```
