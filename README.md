@@ -23,5 +23,5 @@ The script I have written will use the following code to alter the image in an u
 ```
 
 ```javascript
-JavaScript code block to highlight whats up in my code
+JavaScript code block to highlight whats up above btw
 ```
