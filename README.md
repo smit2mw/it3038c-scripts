@@ -8,8 +8,8 @@ The cript I created is written in BASH which is the native shell language of lin
 a Windows computer and so it is meant to be run on a windows computer. The steps below will guide you on how to run the command on your windows machine.
 If you do not want to follow my instructions there is a video you may watch as well that may help you: 
 
-```http
-https://www.youtube.com/watch?v=4zp7m7nkt-A&ab_channel=SavvyNik
+```web
+     https://www.youtube.com/watch?v=4zp7m7nkt-A&ab_channel=SavvyNik
 ```
 
 First you will want to go to this website
