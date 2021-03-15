@@ -36,6 +36,6 @@ Then there will be a list of packages to install. you want to find the package c
 Click the drop down arrow and select "install"
 Once this is done installing you will have something called "cygwin terminal" on your computer this will be where you can run my script 
 You will run my script with: (assuming you are in the folder you saved it in)
-```Bash
+```Shell
      Bash Project2.sh
 ```
