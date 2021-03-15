@@ -39,3 +39,4 @@ You will run my script with: (assuming you are in the folder you saved it in)
 ```Shell
      Bash Project2.sh
 ```
+If you want to be able to summon bash in your cmd or powershell you can watch the rest of the video and it will explain how to do that (start at 5:52)
