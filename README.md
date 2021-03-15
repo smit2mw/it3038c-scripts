@@ -1,14 +1,13 @@
 # it3038c-scripts
 
-Lab 7
+Project 2
 ========
 
 
-I created a Python3 script and stored in it folder Labs. The script is called Pillow1.py
-Assuming you already have Python3 installed you must run these commands:
-```powershell
-    python3 -m pip install --upgrade pip
-    python3 -m pip install --upgrade Pillow
+The cript I created is written in BASH which is the native shell language of linux machines. I wrote this on 
+a Windows computer and so it is meant to be run on a windows computer. The steps below will guide you on how to run the command on your windows machine.
+```HTML
+https://github.com/smit2mw/it3038c-scripts/edit/main/README.md
 ```
 Once you have downloaded my script you can use the following command to run it:
 ```python
