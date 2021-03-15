@@ -18,8 +18,16 @@ First you will want to go to this website
      https://www.cygwin.com/
 ```
 In the top left you will want to click the button that says "Install Cygwin". This will take you to a page with a x64 and an x32 bit download.
-Chose the correct option for you, then download and run the exe file.
-
-
-JavaScript code block to highlight whats up above btw
-
+Chose the correct option for you, then download and run the exe file. You will want to click
+```
+     Install from Internet
+```
+On the next page you will want to click
+```
+     All Users
+```
+And assign a root directory if you dont like the default directory
+Then click
+```
+     Use System Proxy Settings
+```
