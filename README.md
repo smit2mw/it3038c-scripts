@@ -31,3 +31,11 @@ Then click
 ```
      Use System Proxy Settings
 ```
+There will be a list of mirror sites to download from and you make pick anyone that you want it does not matter.
+Then there will be a list of packages to install. you want to find the package called "Base" which should have 37 items in it.
+Click the drop down arrow and select "install"
+Once this is done installing you will have something called "cygwin terminal" on your computer this will be where you can run my script 
+You will run my script with: (assuming you are in the folder you saved it in)
+```Bash
+     Bash Project2.sh
+```
